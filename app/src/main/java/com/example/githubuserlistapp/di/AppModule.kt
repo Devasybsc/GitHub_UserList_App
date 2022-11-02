@@ -1,6 +1,5 @@
 package com.example.githubuserlistapp.di
 
-
 import com.example.githubuserlistapp.MainActivity
 import com.example.githubuserlistapp.ui.UserDetailsFragment
 import com.example.githubuserlistapp.ui.UserListFragment
