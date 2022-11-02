@@ -2,6 +2,7 @@ package com.example.githubuserlistapp.di
 
 
 import com.example.githubuserlistapp.MainActivity
+import com.example.githubuserlistapp.ui.UserDetailsFragment
 import com.example.githubuserlistapp.ui.UserListFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
@@ -16,4 +17,6 @@ abstract class AppModule {
     @ContributesAndroidInjector
     abstract fun bindUserListFragment(): UserListFragment
 
+    @ContributesAndroidInjector
+    abstract fun bindUserDetailsFragment(): UserDetailsFragment
 }

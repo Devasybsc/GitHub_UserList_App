@@ -10,5 +10,18 @@
         android:name="com.example.githubuserlistapp.ui.UserListFragment"
         android:label="@string/fragment_label_user_list"
         tools:layout="@layout/fragment_user_list">
+        <action
+            android:id="@+id/to_user_details"
+            app:destination="@id/user_details_fragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/user_details_fragment"
+        android:name="com.example.githubuserlistapp.ui.UserDetailsFragment"
+        android:label="@string/fragment_label_user_details"
+        tools:layout="@layout/fragment_user_details">
+        <argument
+            android:name="userShortInfo"
+            app:argType="com.example.githubuserlistapp.model.UserShortInfo" />
     </fragment>
 </navigation>
